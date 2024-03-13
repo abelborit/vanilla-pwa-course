@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:proyecto1": "vite /01-fundamentals",
     "build": "vite build",
     "preview": "vite preview"
   },
