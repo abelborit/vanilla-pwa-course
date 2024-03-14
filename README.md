@@ -24,6 +24,10 @@
    - Fetch de Blobs
    - http-server
 
+3. Tercera parte: **Service Worker**
+
+   - Esta sección está enfocada principalmente en el tema del service worker, ¿cómo instalarlo? y ¿qué podemos hacer con él? También veremos a modificar respuestas que es un tema crucial cuando se haga el manejo del cache y respuestas offline. Veremos el poder que tiene el Service Worker sobre toda la aplicación web.
+
 ### \* RECURSOS A USAR:
 
 - Almacenamiento para la Web: https://web.dev/articles/storage-for-the-web?hl=es-419
