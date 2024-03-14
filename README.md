@@ -24,9 +24,19 @@
    - Fetch de Blobs
    - http-server
 
-3. Tercera parte: **Service Worker**
+3. Tercera parte: **Service Worker y Fetch Event**
 
    - Esta sección está enfocada principalmente en el tema del service worker, ¿cómo instalarlo? y ¿qué podemos hacer con él? También veremos a modificar respuestas que es un tema crucial cuando se haga el manejo del cache y respuestas offline. Veremos el poder que tiene el Service Worker sobre toda la aplicación web.
+
+4. Tercera parte: **Ciclo de vida de un service worker y listeners más comunes**
+
+   - Entre los listeners más comunes están:
+
+     - fetch
+     - sync
+     - install
+     - activate
+     - push
 
 ### \* RECURSOS A USAR:
 
