@@ -28,7 +28,7 @@
 
    - Esta sección está enfocada principalmente en el tema del service worker, ¿cómo instalarlo? y ¿qué podemos hacer con él? También veremos a modificar respuestas que es un tema crucial cuando se haga el manejo del cache y respuestas offline. Veremos el poder que tiene el Service Worker sobre toda la aplicación web.
 
-4. Tercera parte: **Ciclo de vida de un service worker y listeners más comunes**
+4. Cuarta parte: **Ciclo de vida de un service worker y listeners más comunes**
 
    - Entre los listeners más comunes están:
 
@@ -37,6 +37,10 @@
      - install
      - activate
      - push
+
+5. Quinta parte: **Estrategias de cache y offline mode**
+
+   - Este es quizás el tema más importante para una PWA después del service worker. Es vital saber cómo funcionará nuestra aplicación para poder aplicar una estrategia del manejo del cache eficiente que sirva para brindarle al usuario final la mejor experiencia posible. Veremos cómo trabajar cuando nuestra aplicación no tiene conexión a internet y cómo podemos servir archivos, inclusive si estos nunca se han cargado en el HTML. Trabajaremos con 5 estrategias comunes y luego implementaremos una mezcla para poder resolver a las necesidades particulares de nuestra aplicación.
 
 ### \* RECURSOS A USAR:
 
