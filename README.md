@@ -44,7 +44,7 @@
 
 ### \* RECURSOS A USAR:
 
-- Almacenamiento para la Web: https://web.dev/articles/storage-for-the-web?hl=es-419
+- Documentación y/o articulo de almacenamiento para la Web: https://web.dev/articles/storage-for-the-web?hl=es-419
 
   - Hay que tener presente que la vigencia es relativa, pueda que el usuario tenga programas que hagan limpieza de caché, y esto puede borrar nuestro caché, también que no tenga espacio en disco y otros factores, por lo que debemos de ser eficientes con lo que grabamos en el caché. Cuando se instala como PWA en el dispositivo, también se irá acumulando ahí todo lo que guardemos en caché, por lo que el usuario será capaz de ver cuanto espacio consumido tiene nuestra app, y si es descomunalmente grande, la borrará.
 
