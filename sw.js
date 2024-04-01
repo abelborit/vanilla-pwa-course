@@ -9,7 +9,7 @@ const CACHE_INMUTABLE_NAME = "inmutable-v1";
 // const CACHE_DYNAMIC_LIMIT = 50;
 
 const APP_SHELL = [
-  "/",
+  // "/", // se comenta porque este "/" nos servirá para desarrollo pero no para producción
   /* también se podría colocar de forma directa como "index.html" y "css/style.css" y "img/favicon.ico" */
   "/index.html",
   "/css/style.css",
