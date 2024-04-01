@@ -42,6 +42,10 @@
 
    - Este es quizás el tema más importante para una PWA después del service worker. Es vital saber cómo funcionará nuestra aplicación para poder aplicar una estrategia del manejo del cache eficiente que sirva para brindarle al usuario final la mejor experiencia posible. Veremos cómo trabajar cuando nuestra aplicación no tiene conexión a internet y cómo podemos servir archivos, inclusive si estos nunca se han cargado en el HTML. Trabajaremos con 5 estrategias comunes y luego implementaremos una mezcla para poder resolver a las necesidades particulares de nuestra aplicación.
 
+6. Sexta parte: **Despliegues a dispositivos**
+
+   - Esta sección está enfocada en probar la aplicación en un dispositivo y verlo funcionando en ese dispositivo. Es recomendable trabajar con android ya que es el sistema operativo que mejor implementa las PWA hasta el momento, pero también veremos unos tips que servirán para mejorar el aspecto visual de nuestra aplicación en IOS. El corazón de esta sección es el archivo manifest.json, quien nos ayuda a indicarle al sistema operativo cómo debe de lucir nuestra aplicación, pero también veremos un par de atributos meta y técnicas para que se vea aún mejor la aplicación web.
+
 ### \* RECURSOS A USAR:
 
 - Documentación y/o articulo de almacenamiento para la Web: https://web.dev/articles/storage-for-the-web?hl=es-419
