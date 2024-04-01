@@ -1,5 +1,5 @@
 /* realizar la importación del sw-utils.js porque se está usando la función updateCacheDynamic. Se debe de hacer con el importScripts en lugar de modules/import de ES6 ya que no es exactamente una aplicación web lo que estamos escribiendo ahí */
-importScripts("/js/sw-utils.js");
+importScripts("js/sw-utils.js");
 
 console.log("SW: Funcionando✅");
 
