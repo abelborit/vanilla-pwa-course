@@ -1,5 +1,5 @@
 /* realizar la importación del sw-utils.js porque se está usando la función updateCacheDynamic. Se debe de hacer con el importScripts en lugar de modules/import de ES6 ya que no es exactamente una aplicación web lo que estamos escribiendo ahí */
-importScripts("/js/sw-utils.js");
+importScripts("js/sw-utils.js");
 
 console.log("SW: Funcionando✅");
 
@@ -9,19 +9,18 @@ const CACHE_INMUTABLE_NAME = "inmutable-v1";
 // const CACHE_DYNAMIC_LIMIT = 50;
 
 const APP_SHELL = [
-  "/",
-  /* también se podría colocar de forma directa como "index.html" y "css/style.css" y "img/favicon.ico" */
-  "/index.html",
-  "/css/style.css",
-  "/img/favicon.ico",
+  // "/", // se comenta porque este "/" nos servirá para desarrollo pero no para producción porque los demás archivos ya están en la ruta raiz de mi aplicación
+  "index.html",
+  "css/style.css",
+  "img/favicon.ico",
   /* las imágenes se pueden guardar en un cache dinámico porque conforme se avance en la aplicación se puede colocar una funcionalidad para actualizar la imagen del avatar y tener en el cache la referencia a unas cuantas imágenes pero en este caso se guardarán de forma directa en el cache estático */
-  "/img/avatars/hulk.jpg",
-  "/img/avatars/ironman.jpg",
-  "/img/avatars/spiderman.jpg",
-  "/img/avatars/thor.jpg",
-  "/img/avatars/wolverine.jpg",
-  "/js/app.js",
-  "/js/sw-utils.js", // también se coloca el script que usamos para dividir el código del service worker
+  "img/avatars/hulk.jpg",
+  "img/avatars/ironman.jpg",
+  "img/avatars/spiderman.jpg",
+  "img/avatars/thor.jpg",
+  "img/avatars/wolverine.jpg",
+  "js/app.js",
+  "js/sw-utils.js", // también se coloca el script que usamos para dividir el código del service worker
 ];
 
 /* aquí iría lo que nosotros no hicimos, por ejemplo, las fuetes de google, la lógica de jquery, etc porque son cosas que nosotros no vamos a cambiar */
@@ -29,7 +28,7 @@ const APP_SHELL_INMUTABLE = [
   "https://fonts.googleapis.com/css?family=Quicksand:300,400",
   "https://fonts.googleapis.com/css?family=Lato:400,300",
   "https://use.fontawesome.com/releases/v5.3.1/css/all.css",
-  "/css/animate.css",
+  "css/animate.css",
   "js/libs/jquery.js",
 ];
 
