@@ -1,5 +1,10 @@
-// Referencias de jQuery
+// Registrar nuestro sw.js
+if (navigator.serviceWorker) {
+  /* cuando se despliegue a GitHub Pages por ejemplo, utilizarlo así "/sw.js" tendrá un pequeño problema que se resolverá usando........ */
+  navigator.serviceWorker.register("/sw.js");
+}
 
+// Referencias de jQuery
 var titulo = $("#titulo");
 var nuevoBtn = $("#nuevo-btn");
 var salirBtn = $("#salir-btn");
@@ -17,7 +22,6 @@ var txtMensaje = $("#txtMensaje");
 var usuario;
 
 // ===== Codigo de la aplicación
-
 function crearMensajeHTML(mensaje, personaje) {
   var content = `
     <li class="animated fadeIn fast">

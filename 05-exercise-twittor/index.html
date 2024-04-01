@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="css/animate.css" />
 
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+    <!-- según la documentación se tendría que colocar como <link rel="manifest" href="/manifest.json"> pero nosotros lo colocaremos <link rel="manifest" href="manifest.json" /> porque como lo vamos a desplegar a GitHub Pages entonces el usar el "/" no será válido porque no estará en la raiz de GitHub pero colocarlo así igual sigue siendo un path relativo porque se encuentra en el mismo directorio o nivel que el index.html -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- El theme_color establecerá el color de la barra de herramientas, y puede reflejarse en la vista previa de la aplicación en los alternadores de tareas. El theme_color debe coincidir con el color del tema meta que se especifica en el encabezado del documento -->
+    <meta name="theme-color" content="#3367D6" />
   </head>
   <body>
     <!-- Titulo -->
@@ -33,7 +39,11 @@
         id="salir-btn"
         class="fa fa-sign-out-alt out oculto animated fadeIn"
       ></span>
-      <span id="titulo">Seleccione Personaje</span>
+      <span id="titulo">
+        <!-- se coloca este ícono porque si estamos offline y entramos a escribir un nuevo mensaje entonces no aparecerán los íconos porque fontawesome no está guardado en cache por lo tanto para solucionarlo, colocaremos un ícono al principio de la página para que ya lo guarde -->
+        <i class="fa fa-user"></i>
+        Seleccione Personaje
+      </span>
       <span
         id="nuevo-btn"
         class="fa fa-pen-square new oculto animated fadeIn fast"
