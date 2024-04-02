@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- remover el notch de los iPhones -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, viewport-fit=cover"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Twittor</title>
 
+    <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css?family=Quicksand:300,400"
       rel="stylesheet"
@@ -16,22 +21,80 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- Iconos -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     />
 
+    <!-- Estilos CSS y Animate CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animate.css" />
 
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
+    <!-- Manifest -->
     <!-- según la documentación se tendría que colocar como <link rel="manifest" href="/manifest.json"> pero nosotros lo colocaremos <link rel="manifest" href="manifest.json" /> porque como lo vamos a desplegar a GitHub Pages entonces el usar el "/" no será válido porque no estará en la raiz de GitHub pero colocarlo así igual sigue siendo un path relativo porque se encuentra en el mismo directorio o nivel que el index.html -->
     <link rel="manifest" href="manifest.json" />
 
+    <!-- Android (funciona mejor en android) -->
     <!-- El theme_color establecerá el color de la barra de herramientas, y puede reflejarse en la vista previa de la aplicación en los alternadores de tareas. El theme_color debe coincidir con el color del tema meta que se especifica en el encabezado del documento -->
     <meta name="theme-color" content="#3367D6" />
+
+    <!-- IOS (mejoras para que en ios tenga una mejor apariencia nuestra PWA) -->
+    <!-- este meta funciona para dispositivos antiguos antes de la versión 11.4 de IOS porque para las versiones posteriores ya funciona hacer la PWA de tipo standalone -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- hay que agregar por lo menos estas resoluciones para que siempre tengamos una resolución que se adapte dependiendo de la densidad de pixeles que tiene el dispositivo ios -->
+    <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/icons/icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/icons/icon-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/icons/icon-152x152.png"
+    />
+
+    <!-- añadir el splash screen para diferentes resoluciones -->
+    <!-- iPhone X, Xs (1125px x 2436px) -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      href="img/icons-ios/apple-launch-1125x2436.png"
+    />
+    <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+      href="img/icons-ios/apple-launch-1242x2208.png"
+    />
+    <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      href="img/icons-ios/apple-launch-750x1334.png"
+    />
+
+    <!-- cambiar el status bar -->
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- darle un nombre corto -->
+    <meta name="apple-mobile-web-app-title" content="Twittor Exercise IOS" />
   </head>
+
   <body>
     <!-- Titulo -->
     <span class="first">

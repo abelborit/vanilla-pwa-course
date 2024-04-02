@@ -64,7 +64,13 @@ self.addEventListener("activate", (event) => {
   const responseCaches = caches.keys().then((cacheKeys) => {
     /* barrer todos los caches del arreglo de cacheKeys y los que sean diferentes de CACHE_STATIC_NAME y los que incluyan en su nombre la palabra "static" entonces serán borrados */
     cacheKeys.forEach((key) => {
+      /* eliminar el caché estático antiguo */
       if (key !== CACHE_STATIC_NAME && key.includes("static")) {
+        return caches.delete(key);
+      }
+
+      /* eliminar el caché dinámico antiguo */
+      if (key !== CACHE_DYNAMIC_NAME && key.includes("dynamic")) {
         return caches.delete(key);
       }
     });
