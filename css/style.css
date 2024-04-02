@@ -12,6 +12,14 @@ body {
   font-size: 16px;
   background-color: #dde1e2;
   width: 100%;
+  /* Disable pull to refresh in Android */
+  overscroll-behavior-y: contain;
+  /* Disable text selection */
+  -user-select: none;
+  /* Disable highlighting */
+  -webkit-tap-highlight-color: transparent;
+  /* Disable callouts */
+  -webkit-touch-callout: none;
 }
 
 /* Personalizados */
