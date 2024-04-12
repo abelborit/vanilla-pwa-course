@@ -1,6 +1,23 @@
 (function () {
   "use strict";
 
+  // validación para que si
+  let url = window.location.href;
+  let servideWorkerLocation = "/vanilla-pwa-course/sw.js";
+
+  // Registrar nuestro sw.js
+  if (navigator.serviceWorker) {
+    /* cuando se despliegue a GitHub Pages por ejemplo, utilizarlo así "/sw.js" tendrá un problema y nos dirá algo similar a "Uncaught (in promise) TypeError: Failed to register a ServiceWorker for scope ('https://user.github.io/') with script ('https://user.github.io/sw.js'): A bad HTTP response code (404) was received when fetching the script." que lo que quiere decir es que no encuentra el recurso de "sw.js" porque como le estamos colocando "/sw.js" entonces se irá a la raiz de la aplicación que sería "https://user.github.io/" pero sabemos que ahí no se encuentra el service worker entonces sería correcto usar "/sw.js" cuando el service worker se encuentre en la raiz de mi proyecto como en el caso de desarrollo pero al desplegarlo a GitHub Pages, que sería como producción, entonces tenemos que resolver ese problema y para eso haremos una validación según la ruta en la cual nos encontremos */
+
+    /* para desarrollo cambia la ruta de servideWorkerLocation a "/sw.js" */
+    if (url.includes("localhost")) {
+      servideWorkerLocation = "/sw.js";
+    }
+
+    /* para producción toma directamente la ruta de servideWorkerLocation que es  "/vanilla-pwa-course/sw.js" */
+    navigator.serviceWorker.register(servideWorkerLocation);
+  }
+
   var ENTER_KEY = 13;
   var newTodoDom = document.getElementById("new-todo");
   var syncDom = document.getElementById("sync-wrapper");
