@@ -46,6 +46,10 @@
 
    - Esta sección está enfocada en probar la aplicación en un dispositivo y verlo funcionando en ese dispositivo. Es recomendable trabajar con android ya que es el sistema operativo que mejor implementa las PWA hasta el momento, pero también veremos unos tips que servirán para mejorar el aspecto visual de nuestra aplicación en IOS. El corazón de esta sección es el archivo manifest.json, quien nos ayuda a indicarle al sistema operativo cómo debe de lucir nuestra aplicación, pero también veremos un par de atributos meta y técnicas para que se vea aún mejor la aplicación web.
 
+7. Séptima parte: **IndexedDB - Base de datos local**
+
+8. Octava parte: **IndexedDB - Ejercicio Práctico**
+
 ### \* RECURSOS A USAR:
 
 - Documentación y/o articulo de almacenamiento para la Web: https://web.dev/articles/storage-for-the-web?hl=es-419
