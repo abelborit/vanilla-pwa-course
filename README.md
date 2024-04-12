@@ -11,24 +11,23 @@
    - ¿Por qué construir una PWA?
    - ¿Cómo funciona?
    - Conceptos básicos de una PWA
+   - Reforzamiento: Promesas - Fetch API - HttpServer:
 
-2. Segunda parte: **Reforzamiento: Promesas - Fetch API - HttpServer**
+     - Promesas
+     - Promesas en cadena
+     - Promise.all
+     - Promise.race
+     - Fetch API
+     - Gets
+     - Posts
+     - Fetch de Blobs
+     - http-server
 
-   - Promesas
-   - Promesas en cadena
-   - Promise.all
-   - Promise.race
-   - Fetch API
-   - Gets
-   - Posts
-   - Fetch de Blobs
-   - http-server
-
-3. Tercera parte: **Service Worker y Fetch Event**
+2. Segunda parte: **Service Worker y Fetch Event**
 
    - Esta sección está enfocada principalmente en el tema del service worker, ¿cómo instalarlo? y ¿qué podemos hacer con él? También veremos a modificar respuestas que es un tema crucial cuando se haga el manejo del cache y respuestas offline. Veremos el poder que tiene el Service Worker sobre toda la aplicación web.
 
-4. Cuarta parte: **Ciclo de vida de un service worker y listeners más comunes**
+3. Tercera parte: **Ciclo de vida de un service worker y listeners más comunes**
 
    - Entre los listeners más comunes están:
 
@@ -38,17 +37,27 @@
      - activate
      - push
 
-5. Quinta parte: **Estrategias de cache y offline mode**
+4. Cuarta parte: **Estrategias de cache y offline mode**
 
    - Este es quizás el tema más importante para una PWA después del service worker. Es vital saber cómo funcionará nuestra aplicación para poder aplicar una estrategia del manejo del cache eficiente que sirva para brindarle al usuario final la mejor experiencia posible. Veremos cómo trabajar cuando nuestra aplicación no tiene conexión a internet y cómo podemos servir archivos, inclusive si estos nunca se han cargado en el HTML. Trabajaremos con 5 estrategias comunes y luego implementaremos una mezcla para poder resolver a las necesidades particulares de nuestra aplicación.
 
-6. Sexta parte: **Despliegues a dispositivos**
+5. Quinta parte: **Despliegues a dispositivos - Ejercicio Práctico: Twittor**
 
    - Esta sección está enfocada en probar la aplicación en un dispositivo y verlo funcionando en ese dispositivo. Es recomendable trabajar con android ya que es el sistema operativo que mejor implementa las PWA hasta el momento, pero también veremos unos tips que servirán para mejorar el aspecto visual de nuestra aplicación en IOS. El corazón de esta sección es el archivo manifest.json, quien nos ayuda a indicarle al sistema operativo cómo debe de lucir nuestra aplicación, pero también veremos un par de atributos meta y técnicas para que se vea aún mejor la aplicación web.
 
-7. Séptima parte: **IndexedDB - Base de datos local**
+6. Sexta parte: **IndexedDB - Base de datos local**
 
-8. Octava parte: **IndexedDB - Ejercicio Práctico**
+- Esta sección está enfocada a grabar data en una base de datos local que funcione sin conexión a internet. La idea central, es poder realizar grabaciones locales sin conexión a internet para que cuando recuperemos la comunicación con el servidor, se realice una sincronización de los registros almacenados localmente. Para trabajar con esto ocupamos algo llamado indexeddb, el cual es algo complicado y poco amigable, pero aquí lo aprenderemos de igual forma, y también nos enfocaremos en utilizar una alternativa fácil de usar que nos resolverá el mismo problema.
+
+7. Séptima parte: **PouchDB en vez de IndexedDB**
+
+8. Octava parte: **PouchDB - Ejercicio Práctico**
+
+9. Novena parte: **Offline Synchronization (Peticiones Offline)**
+
+10. Décima parte: **Push Notifications**
+
+11. Onceava parte: **Angular PWA**
 
 ### \* RECURSOS A USAR:
 
