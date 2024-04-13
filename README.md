@@ -59,6 +59,8 @@
 
 11. Onceava parte: **Angular PWA**
 
+    - Esta sección usará el paquete de @angular/pwa en donde se creará una aplicación web desde cero consumiendo servicios e implementando diferentes estrategias de caché que nos ofrece el el paquete de @angular/pwa.
+
 ### \* RECURSOS A USAR:
 
 - Documentación y/o articulo de almacenamiento para la Web: https://web.dev/articles/storage-for-the-web?hl=es-419

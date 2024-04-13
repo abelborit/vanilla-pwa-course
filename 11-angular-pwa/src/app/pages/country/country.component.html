@@ -1,0 +1,55 @@
+<ng-template #loading>
+  <div class="alert alert-info text-center">Wait please, loading...</div>
+</ng-template>
+
+<div *ngIf="countryInfo(); else loading">
+  <h1>{{ countryInfo()?.name?.common }}</h1>
+  <hr />
+
+  <div class="row animated fadeIn fast">
+    <div class="col-7">
+      <h5>Datos</h5>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <b>Population:</b> {{ countryInfo()?.population | number }}
+        </li>
+        <li class="list-group-item">
+          <b>Area:</b> {{ countryInfo()?.area | number }}
+        </li>
+        <li class="list-group-item">
+          <b>Continent:</b> {{ countryInfo()?.continents }}
+        </li>
+        <li class="list-group-item">
+          <b>Time Zone:</b> {{ countryInfo()?.timezones }}
+        </li>
+      </ul>
+
+      <hr />
+
+      <h5>Fronteras</h5>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let bordes of countryInfo()?.borders"
+        >
+          {{ bordes }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-5">
+      <h5>Bandera</h5>
+
+      <img
+        [src]="countryInfo()?.flags?.svg"
+        class="bandera"
+        [alt]="countryInfo()?.flags?.alt"
+      />
+
+      <br />
+      <br />
+
+      <a class="btn btn-danger btn-block" routerLink="/">Regresar</a>
+    </div>
+  </div>
+</div>
