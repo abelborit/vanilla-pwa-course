@@ -1,3 +1,17 @@
+# Angular + PWA
+
+---
+
+- ### Más Información:
+
+  - https://itnext.io/build-a-production-ready-pwa-with-angular-and-firebase-8f2a69824fcc
+  - https://angular.io/guide/service-worker-getting-started
+  - https://angular.io/guide/service-worker-config
+  - https://stackoverflow.com/questions/42474908/using-multiple-javascript-service-workers-at-the-same-domain-but-different-folde
+  - https://stackoverflow.com/questions/56199460/need-information-about-using-multi-service-worker-in-a-domain
+
+---
+
 # AngularPwa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
