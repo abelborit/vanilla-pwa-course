@@ -12,7 +12,8 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
-        ]
+        ],
+        "urls": ["https://cdn.jsdelivr.net/npm/**", "https://flagcdn.com/**"]
       }
     },
     {
@@ -24,6 +25,18 @@
           "/assets/**",
           "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "country-api",
+      "urls": ["https://restcountries.com/v3.1/**"],
+      "cacheConfig": {
+        "maxSize": 4,
+        "maxAge": "72h",
+        "timeout": "3s",
+        "strategy": "performance"
       }
     }
   ]
