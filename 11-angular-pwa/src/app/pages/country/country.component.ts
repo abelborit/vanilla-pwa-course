@@ -1,4 +1,10 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  WritableSignal,
+  inject,
+  signal,
+} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs';
 import { CountryResponse } from 'src/app/interfaces/country.interface';
@@ -16,7 +22,9 @@ export class CountryComponent implements OnInit {
   private router = inject(Router);
 
   /* VARIABLES */
-  public countryInfo = signal<CountryResponse | undefined>(undefined);
+  // public countryInfo = signal<CountryResponse | undefined>(undefined);
+  public countryInfo: WritableSignal<CountryResponse | undefined> =
+    signal(undefined);
 
   ngOnInit(): void {
     this.activatedRoute.params
@@ -26,10 +34,10 @@ export class CountryComponent implements OnInit {
         })
       )
       .subscribe((response) => {
-        console.log(response);
+        // console.log(response);
 
         if (!response) {
-          console.log("there isn't country with this alpha code❌");
+          // console.log("there isn't country with this alpha code❌");
           return this.router.navigateByUrl('');
         }
 

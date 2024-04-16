@@ -3,7 +3,7 @@
 </ng-template>
 
 <div *ngIf="countryInfo(); else loading">
-  <h1>{{ countryInfo()?.name?.common }}</h1>
+  <h1 data-testid="titleCountry">{{ countryInfo()?.name?.common }}</h1>
   <hr />
 
   <div class="row animated fadeIn fast">

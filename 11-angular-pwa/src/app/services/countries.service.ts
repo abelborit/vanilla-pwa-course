@@ -20,17 +20,17 @@ export class CountriesService {
 
   /* MÉTODOS */
   private handleGetCountries(): void {
-    console.log('handleGetCountries');
+    // console.log('handleGetCountries');
 
     this.httpClient
       .get<CountryResponse[]>(`${this.BASE_URL}/lang/spanish`)
       .pipe(
-        tap((countriesArray) => console.log(countriesArray)),
+        // tap((countriesArray) => console.log(countriesArray)),
         catchError(() => of([]))
       )
       .subscribe({
         next: (countriesResponse) => {
-          console.log('countriesResponse');
+          // console.log('countriesResponse');
           this.countries.set(countriesResponse);
         },
         error: (error) => {
@@ -40,7 +40,7 @@ export class CountriesService {
   }
 
   public handleGetCountryById(id: string): Observable<CountryResponse | null> {
-    console.log({ country_id: id });
+    // console.log({ country_id: id });
 
     return this.httpClient
       .get<CountryResponse[]>(`${this.BASE_URL}/alpha/${id}`)
